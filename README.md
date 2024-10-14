@@ -1,5 +1,6 @@
 # 📰 News Research Tool
 
+[![Video Output](https://github.com/user-attachments/assets/3edce063-f133-431d-b5e8-5cde90f2bae5)](https://github.com/user-attachments/assets/3edce063-f133-431d-b5e8-5cde90f2bae5)
 ![News Research Tool Output](https://github.com/mugunthjhs/News-Research-Tool--Gen_AI/blob/main/image_output.png)
 
 This project is a web-based research tool that allows users to input news article URLs, process the content, and then query it using natural language questions. The tool uses OpenAI's language model for processing and generating insights from the provided articles.
