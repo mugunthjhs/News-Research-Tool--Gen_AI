@@ -25,7 +25,7 @@ A Streamlit application that allows you to extract content from URLs, index it, 
 1.  Clone the repository:
 
     ```bash
-    git clone [your-repository-url]  # Replace with your actual repository URL
+    git clone https://github.com/mugunthjhs/URL-Insight-Assistant.git  # Replace with your actual repository URL
     cd your-repository-directory
     ```
 
@@ -44,8 +44,6 @@ A Streamlit application that allows you to extract content from URLs, index it, 
     ```bash
     streamlit run main.py
     ```
-
-    (Assuming your main Streamlit file is named `main.py`)
 
 2.  Enter your Google Generative AI API key in the sidebar.
 3.  Enter the URLs you want to process in the sidebar.
