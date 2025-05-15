@@ -1,6 +1,6 @@
 # URL Insight Assistant
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://url-insight-assistant.streamlit.app/)
+[**Access the App:  https://url-insight-assistant.streamlit.app/ (Streamlit Cloud Deployment)**]
 
 A Streamlit application that allows you to extract content from URLs, index it, and ask questions about the information.  Leverages Google's Gemini models (1.5 Flash) for powerful and efficient information retrieval.
 
