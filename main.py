@@ -114,7 +114,7 @@ if query:
             )
             result = chain({"question": query}, return_only_outputs=True)
 
-            answer = result.get("answer", "").strip()
+            answer = result.get("answer", "").replace("FINAL ANSWER:", "").strip()
 
             st.header("🧠 Answer")
             st.markdown(f"<p style='font-size:22px;'>{answer}</p>", unsafe_allow_html=True)
