@@ -1,31 +1,129 @@
-# 📰 News Research Tool
+# URL Insight Assistant
 
-[View Video Output](https://github.com/user-attachments/assets/3edce063-f133-431d-b5e8-5cde90f2bae5)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://url-insight-assistant.streamlit.app/)
 
-
-![News Research Tool Output](https://github.com/mugunthjhs/News-Research-Tool--Gen_AI/blob/main/image_output.png)
-
-This project is a web-based research tool that allows users to input news article URLs, process the content, and then query it using natural language questions. The tool uses OpenAI's language model for processing and generating insights from the provided articles.
+A Streamlit application that allows you to extract content from URLs, index it, and ask questions about the information.  Leverages Google's Gemini models (1.5 Flash) for powerful and efficient information retrieval.
 
 ## Features
-- **Article Processing:** Input up to three article URLs, which are automatically processed and converted into vector embeddings using OpenAI's language model.
-- **Query-Based Retrieval:** Users can ask questions related to the articles, and the tool provides responses along with the sources of the information.
-- **Embeddings Storage:** The processed data is stored in a FAISS index, allowing for fast and efficient querying.
-- **Streamlit Interface:** A simple and interactive interface built using Streamlit.
 
-## How to Use
+*   **URL Processing:**  Ingest and process content from one or more URLs.
+*   **Content Indexing:** Creates a vector index of the URL content for efficient searching.
+*   **Question Answering:**  Ask questions about the content of the processed URLs and receive concise answers.
+*   **Source Attribution:**  Provides the source URLs used to answer questions.
+*   **Streamlit Interface:**  User-friendly interface for easy interaction.
 
-1. **Enter your OpenAI API key**:  
-   In the sidebar of the Streamlit app, enter your OpenAI API key in the provided input field. This is essential for the tool to process and generate insights.
+## Getting Started
 
-2. **Input News Article URLs**:  
-   Enter up to three URLs of news articles you want to process. These articles will be fetched and split into smaller sections for analysis.
+### Prerequisites
 
-3. **Process the URLs**:  
-   After entering the URLs, click the "Process URLs" button to begin fetching, splitting, and embedding the content. This step may take a few moments.
+*   A Google Generative AI API key.  You can obtain one from the [Google AI Studio](https://makersuite.google.com/).
+*   Python 3.7+
+*   Streamlit
 
-4. **Ask Questions**:  
-   Once the articles are processed, you can ask any question related to the content by typing it in the input box at the bottom of the interface. The tool will retrieve relevant answers from the processed data.
+### Installation
 
-5. **View the Results**:  
-   The answer to your question, along with the sources from the articles, will be displayed in the main output section of the app.
+1.  Clone the repository:
+
+    ```bash
+    git clone [your-repository-url]  # Replace with your actual repository URL
+    cd your-repository-directory
+    ```
+
+2.  Install the required packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    (Make sure you have a `requirements.txt` file that includes: `streamlit`, `langchain-google-genai`, `langchain-community`, `langchain`, `unstructured`)
+
+### Usage
+
+1.  Run the Streamlit application:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+    (Assuming your main Streamlit file is named `app.py`)
+
+2.  Enter your Google Generative AI API key in the sidebar.
+3.  Enter the URLs you want to process in the sidebar.
+4.  Click the "Process URLs" button.
+5.  Once the URLs are processed, you can ask questions in the text input box.
+
+## Notes
+
+*   The vector index is stored locally in a directory named `vector_index`.
+*   The application uses Gemini 1.5 Flash for question answering.  Make sure your API key has access to this model.
+* Error Handling: The UI incorporates alerts for issues stemming from keys and incorrect data input.
+
+## License
+
+[Choose a License - e.g., MIT License]
+
+Plain Text Version (for copying):
+
+# URL Insight Assistant
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://url-insight-assistant.streamlit.app/)
+
+A Streamlit application that allows you to extract content from URLs, index it, and ask questions about the information.  Leverages Google's Gemini models (1.5 Flash) for powerful and efficient information retrieval.
+
+## Features
+
+*   **URL Processing:**  Ingest and process content from one or more URLs.
+*   **Content Indexing:** Creates a vector index of the URL content for efficient searching.
+*   **Question Answering:**  Ask questions about the content of the processed URLs and receive concise answers.
+*   **Source Attribution:**  Provides the source URLs used to answer questions.
+*   **Streamlit Interface:**  User-friendly interface for easy interaction.
+
+## Getting Started
+
+### Prerequisites
+
+*   A Google Generative AI API key.  You can obtain one from the [Google AI Studio](https://makersuite.google.com/).
+*   Python 3.7+
+*   Streamlit
+
+### Installation
+
+1.  Clone the repository:
+
+    ```bash
+    git clone [your-repository-url]  # Replace with your actual repository URL
+    cd your-repository-directory
+    ```
+
+2.  Install the required packages:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    (Make sure you have a `requirements.txt` file that includes: `streamlit`, `langchain-google-genai`, `langchain-community`, `langchain`, `unstructured`)
+
+### Usage
+
+1.  Run the Streamlit application:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+    (Assuming your main Streamlit file is named `app.py`)
+
+2.  Enter your Google Generative AI API key in the sidebar.
+3.  Enter the URLs you want to process in the sidebar.
+4.  Click the "Process URLs" button.
+5.  Once the URLs are processed, you can ask questions in the text input box.
+
+## Notes
+
+*   The vector index is stored locally in a directory named `vector_index`.
+*   The application uses Gemini 1.5 Flash for question answering.  Make sure your API key has access to this model.
+* Error Handling: The UI incorporates alerts for issues stemming from keys and incorrect data input.
+
+## License
+
+[Choose a License - e.g., MIT License]
