@@ -42,10 +42,10 @@ A Streamlit application that allows you to extract content from URLs, index it, 
 1.  Run the Streamlit application:
 
     ```bash
-    streamlit run app.py
+    streamlit run main.py
     ```
 
-    (Assuming your main Streamlit file is named `app.py`)
+    (Assuming your main Streamlit file is named `main.py`)
 
 2.  Enter your Google Generative AI API key in the sidebar.
 3.  Enter the URLs you want to process in the sidebar.
